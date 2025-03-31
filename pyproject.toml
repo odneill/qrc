@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qrc"
+dynamic = ["version"]
+description = "Quantum reservoir computing."
+readme = "README.md"
+requires-python =">=3.11"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Oliver Neill", email = "oliver.neill@glasgow.ac.uk"},
+]
+urls = {repository = "https://github.com/odneill/qrc" }
+
+dependencies = [
+  "exqalibur==0.2.1",
+  "loguru==0.7.2",
+  "matplotlib==3.8.2",
+  "numpy==1.26.3",
+  "perceval-quandela @ git+https://github.com/Quandela/Perceval.git@982aabc9194af3ee333f50d0166e49d527a32436",
+  "scipy==1.12.0",
+  "sympy==1.12",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+test = [
+  "absl-py",
+  "pytest",
+  "pytest-cov",
+]
+dev = [
+  "pre-commit",
+  "pylint",
+  "ruff",
+  "setuptools_scm>=8",
+  "vulture",
+]
+
+[project.scripts]
+qrc_run_expt = "qrc.tools.run_experiments:main"
+qrc_postprocess = "qrc.tools.postprocess:main"
+qrc_eval_tasks = "qrc.tools.eval_tasks:main"
+qrc_eval_classification = "qrc.tools.eval_classification:main"
+qrc_generate_interp_data = "qrc.tools.generate_interp_data:main"
+qrc_parse_log = "qrc.tools.parse_logfile:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["qrc*"]
+
+[tool.setuptools_scm]
+
+[tool.ruff]
+preview = true
+exclude = [
+  ".git",
+  "dev",
+  "__pycache__",
+]
+line-length = 88
+indent-width = 2
+lint.select = [
+  "B9", # raise full stack traces, and strict zip
+  "C", # mccabe complexity, flake comprehensions
+  "E",
+  "F",
+  "I",
+  "W", # code style warnings
+  "YTT",
+]
+lint.ignore = [
+  "E111", # Indentation not multiple 4
+  "E114", # Indentation not multiple 4 in comments
+  "E501", # line too long
+  "C901", # too complex
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = 88

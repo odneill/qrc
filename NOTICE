@@ -1,0 +1,8 @@
+This project contains code modified from the following projects:
+
+- [https://github.com/MedMNIST/MedMNIST](https://github.com/datapythonista/mnist): licensed under [Apache v2.0](http://www.apache.org/licenses/LICENSE-2.0)
+  - [src/qrc/_datasets/_medmnist_info.py](src/qrc/_datasets/_medmnist_info.py)
+  - [src/qrc/_datasets/medmnist.py](src/qrc/_datasets/medmnist.py)
+
+- [https://github.com/datapythonista/mnist](https://github.com/datapythonista/mnist)
+  - [src/qrc/_datasets/mnist.py](src/qrc/_datasets/mnist.py): 

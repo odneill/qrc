@@ -1,0 +1,16 @@
+*.png
+*.pdf
+*.npz
+*.npy
+*.log
+*.pkl
+*.svg
+
+**/expts
+**/__pycache__
+**/.ipynb_checkpoints
+*.egg-info/
+build/
+dist/
+site/
+.python-version
