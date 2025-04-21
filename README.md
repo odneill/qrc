@@ -60,13 +60,17 @@ Once the data has been generated in the experiments directories, the figures for
 If you use this code in your research, please cite the following paper:
 
 ```bibtex
-@misc{Nerenberg2025,
-   title={Photon Number-Resolving Quantum Reservoir Computing}, 
-   author={Sam Nerenberg and Oliver D. Neill and Giulia Marcucci and Daniele Faccio},
-   year={2024},
-   eprint={2402.06339},
-   archivePrefix={arXiv},
-   primaryClass={quant-ph},
-   url={https://arxiv.org/abs/2402.06339}, 
+@article{Nerenberg:25,
+  author = {Sam Nerenberg and Oliver D. Neill and Giulia Marcucci and Daniele Faccio},
+  journal = {Optica Quantum},
+  number = {2},
+  pages = {201--210},
+  publisher = {Optica Publishing Group},
+  title = {Photon number-resolving quantum reservoir computing},
+  volume = {3},
+  month = {Apr},
+  year = {2025},
+  url = {https://opg.optica.org/opticaq/abstract.cfm?URI=opticaq-3-2-201},
+  doi = {10.1364/OPTICAQ.553294},
 }
 ```
