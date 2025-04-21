@@ -1,6 +1,6 @@
 # Quantum Reservoir Computer (QRC) Simulations
 
-This repository contains the code replicating the results in the paper "Photon Number-Resolving Quantum Reservoir Computing" [[arxiv.org/abs/2402.06339](https://arxiv.org/abs/2402.06339)].
+This repository contains the code replicating the results in the paper "Photon Number-Resolving Quantum Reservoir Computing" [[10.1364/OPTICAQ.553294](https://doi.org/10.1364/OPTICAQ.553294)].
 
 ## Reproduce the paper's results
 
